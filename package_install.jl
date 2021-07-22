@@ -30,5 +30,10 @@ Pkg.add("StatsBase")
 Pkg.add("StatsPlots")
 Pkg.add("TickTock")
 Pkg.add("LinearAlgebra")
+Pkg.add("HDF5")
+Pkg.add("WignerD")
+Pkg.add("WignerFamilies")
+Pkg.add("Statistics")
+Pkg.add("LoopVectorization")
 
 
