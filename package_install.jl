@@ -1,11 +1,9 @@
 using Pkg
-ENV["PYTHON"] = "~/.conda/envs/hpenv/bin/python"
 ENV["JULIA_DEBUG"] = "GR" # Turn on debug statements    for the GR package
 ENV["GRDIR"] = "" # Force GR to rebuild from default settings
-import Pkg; Pkg.build("GR")
 
 Pkg.add("BenchmarkTools")
-Pkg.add("Conda")
+#Pkg.add("Conda")
 Pkg.add("DSP")
 Pkg.add("Distributions")
 Pkg.add("Documenter")
@@ -38,4 +36,4 @@ Pkg.add("WignerFamilies")
 Pkg.add("Statistics")
 Pkg.add("DataFrames")
 Pkg.add("CSV")
-
+Pkg.add("SkyCoords")
