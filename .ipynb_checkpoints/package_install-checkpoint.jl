@@ -1,8 +1,9 @@
 using Pkg
-ENV["PYTHON"] = "~/.conda/envs/py38/bin/python"
+ENV["JULIA_DEBUG"] = "GR" # Turn on debug statements    for the GR package
+ENV["GRDIR"] = "" # Force GR to rebuild from default settings
 
 Pkg.add("BenchmarkTools")
-Pkg.add("Conda")
+#Pkg.add("Conda")
 Pkg.add("DSP")
 Pkg.add("Distributions")
 Pkg.add("Documenter")
@@ -24,7 +25,6 @@ Pkg.add("PyCall")
 Pkg.add("PyPlot")
 Pkg.add("ReferenceFrameRotations")
 Pkg.add("Revise")
-Pkg.add("StatPlots")
 Pkg.add("StaticArrays")
 Pkg.add("StatsBase")
 Pkg.add("StatsPlots")
@@ -34,6 +34,9 @@ Pkg.add("HDF5")
 Pkg.add("WignerD")
 Pkg.add("WignerFamilies")
 Pkg.add("Statistics")
-Pkg.add("LoopVectorization")
-
-
+Pkg.add("DataFrames")
+Pkg.add("CSV")
+Pkg.add("SkyCoords")
+Pkg.add("JSON")
+Pkg.add("TOML")
+Pkg.add("NaNStatistics")
